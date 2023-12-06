@@ -7,17 +7,17 @@ body {
 }
 
 /* Estilos de header */
-/**/                                                                                        
+/**/
 header {
     /*el ancho del contenedor, respecto al contenedor padre, en este caso body*/
     width: 95%;
     /*color de fondo*/
     background: white;
     /*espacio hacia afuera con otros elementos*/
-    margin: 20px ;
+    margin: 20px;
     /*color del texto*/
     color: rgb(139, 24, 24);
-    
+
 
     /*usarlo como un contenedor de rejilla y poder usar propiedades de grid*/
     display: grid;
@@ -29,12 +29,12 @@ header {
     justify-content: space-between;
     /*alinear verticalmente
     align-items: ;*/
-    
-    
+
+
     border: 3px solid black;
 }
 
-.nombreEmpresa{
+.nombreEmpresa {
     font-size: 24px;
     text-align: left;
     border: 3px solid black;
@@ -44,26 +44,48 @@ header {
     border: 3px solid black;
     display: grid;
     justify-content: end;
-    align-items:end; 
+    align-items: end;
     padding-right: 3%;
 }
 
 .header-icons img {
     width: 30px;
     margin-left: 10px;
-    
+
 }
 
-.icons{
+.icons {
     border: 3px solid black;
-    
 }
 
-.logo{
-    
+.logo {
     border: 3px solid rgb(151, 23, 104);
     margin: 5px;
 }
+/* cambiar imagen por texto, pero no me funciona
+#zona_privada{
+    display:inline-block;
+    position:relative;
+}
+
+#zona_privada > div{
+    position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:10px;
+  margin:0;
+}
+
+#private:hover{
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;    
+}
+*/
 
 /* Estilos de navegación */
 
@@ -83,38 +105,97 @@ nav li {
     margin: 0 10px;
 }
 
-nav a {
+nav a:hover {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    opacity: 1.08;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
+
+
 
 /* Estilos de contenido */
 
-.content {
+.contenido {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-.product-families {
-    /* Estilos de familias de productos */
+.familia-productos {
+   display: grid;
+   grid-template-rows: 1fr,1fr;
 }
 
-.best-sellers {
+.familia_producto{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.seccion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid black;
+    display: flex;
+    /*para que no desborde si se hace mas pequeña la pestaña, se van haciendo mas pequeñas*/
+    flex-wrap: nowrap;
+}
+/*pasar el raton por encima de las familias*/
+.seccion:hover{
+    background-color: #dbeaf4;
+    cursor: pointer;
+}
+
+.seccion img{
+    width: 10%;
+}
+
+.seccion p{
+    width: 10%;
+    border: 3px solid black;
+    letter-spacing: 7px;
+}
+
+.mas-vendidos {
     /* Estilos de productos más vendidos */
+
 }
 
-.info-section {
+.mas-vendidos1 {
+    /* Estilos de productos más vendidos */
+
+}
+
+.mas-vendidos2 {
+    /* Estilos de productos más vendidos */
+
+}
+
+.zona-informativa {
     /* Estilos de zona informativa */
 }
+
+
+
+
+
+
+
 
 /* Estilos de footer */
 
 footer {
-    background-color: #333;
-    padding: 10px;
+    /*background-color: #333;*/
+    background-image: url("../img/suelo_azul.jpeg");
+    padding: 35px;
     color: white;
+
 }
 
 .footer-links {
@@ -131,10 +212,27 @@ footer {
 .footer-links a {
     text-decoration: none;
     color: white;
+    margin: 3px;
 }
 
-/* Media query para dispositivos menores a 768px */
+.copyright{
+    padding: 12px;
+}
 
+.footer-links a:hover{
+    text-decoration: underline;
+    color: orange;
+    font-weight: bold;
+    opacity: 1.08;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+
+/* Media query para dispositivos menores a 768px */
 @media (max-width: 768px) {
     /* Estilos específicos para dispositivos móviles */
 }
