@@ -186,7 +186,25 @@ nav a:hover {
     width: 26%;
 }
 
+.container-table{
+    width: 90%;
+    margin: 50px auto;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+}
+
+.table__header,.table__item{
+    display: grid;
+    align-items: center;
+}
+.table__header{
+    font-weight: bold;
+}
+.table__item{
+    padding: 10px;
+}
 
 .mas-vendidos2 {
     /* Estilos de productos más vendidos */
