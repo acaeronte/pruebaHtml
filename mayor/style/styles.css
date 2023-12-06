@@ -1,0 +1,140 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    /*background: #3e7591ec;*/
+    background: #3e7591ec;
+}
+
+/* Estilos de header */
+/**/                                                                                        
+header {
+    /*el ancho del contenedor, respecto al contenedor padre, en este caso body*/
+    width: 95%;
+    /*color de fondo*/
+    background: white;
+    /*espacio hacia afuera con otros elementos*/
+    margin: 20px ;
+    /*color del texto*/
+    color: rgb(139, 24, 24);
+    
+
+    /*usarlo como un contenedor de rejilla y poder usar propiedades de grid*/
+    display: grid;
+    /*definir el numero de columnas, decimos 2 columnas y cada una ocupa 1parte del total*/
+    grid-template-columns: repeat(2, 1fr);
+    /*definir el numero de filas*/
+    grid-template-rows: 1fr 0.1fr;
+    /*alinear horizontalmente*/
+    justify-content: space-between;
+    /*alinear verticalmente
+    align-items: ;*/
+    
+    
+    border: 3px solid black;
+}
+
+.nombreEmpresa{
+    font-size: 24px;
+    text-align: left;
+    border: 3px solid black;
+}
+
+.header-icons {
+    border: 3px solid black;
+    display: grid;
+    justify-content: end;
+    align-items:end; 
+    padding-right: 3%;
+}
+
+.header-icons img {
+    width: 30px;
+    margin-left: 10px;
+    
+}
+
+.icons{
+    border: 3px solid black;
+    
+}
+
+.logo{
+    
+    border: 3px solid rgb(151, 23, 104);
+    margin: 5px;
+}
+
+/* Estilos de navegación */
+
+nav {
+    text-align: center;
+    background-color: #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos de contenido */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product-families {
+    /* Estilos de familias de productos */
+}
+
+.best-sellers {
+    /* Estilos de productos más vendidos */
+}
+
+.info-section {
+    /* Estilos de zona informativa */
+}
+
+/* Estilos de footer */
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Media query para dispositivos menores a 768px */
+
+@media (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles */
+}

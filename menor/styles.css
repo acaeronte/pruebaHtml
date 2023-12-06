@@ -1,0 +1,33 @@
+/* Estilos específicos para dispositivos móviles */
+
+header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+nav {
+    padding: 10px;
+}
+
+.content {
+    flex-direction: column;
+}
+
+.product-families {
+    /* Estilos específicos para dispositivos móviles */
+}
+
+.best-sellers {
+    /* Estilos específicos para dispositivos móviles */
+}
+
+.info-section {
+    /* Estilos específicos para dispositivos móviles */
+}

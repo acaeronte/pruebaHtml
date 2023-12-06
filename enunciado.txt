@@ -1,0 +1,91 @@
+En esta práctica vas a desarrollar una web responsiva la cual tendrá un diseño para dispositivos con menos de 768px de ancho y otro diseño para dispositivos con una resolución igual o mayor a 768px. Los elementos que conforman nuestra página deben adaptarse a dichas resoluciones de forma que la visibilidad y legibilidad de los mismos sea correcta en todo momento.
+
+Vamos a poner en práctica tecnologías como FlexBox y/o Grid para que nuestro desarrollo sea lo más responsivo posible.
+
+Consideraciones a tener en cuenta:
+
+Las tablas no deben utilizarse como elemento de maquetación, en caso de utilizarlas no se valorará y todo ejercicio relacionado con ellas no tendrá puntuación o tendrá penalización.
+Deben utilizarse el máximo de etiquetas semánticas en HTML5.
+No se permite el uso de framework.
+La composición final debe quedar equilibrada y debe cuidarse la estética. Serán elementos que se valorarán.
+Los textos deben ser legibles en cualquiera de las resoluciones, siendo proporcionados en función de las resoluciones de los dispositivos.
+Nuestra web estará formada por una única página web denominada (index.html) y que estará relacionada con una temática:
+
+Antes de comenzar a detallar los requisitos de nuestra página, indicar que junto con el desarrollo hay que entregar un documento PDF donde se pueden realizar todas las observaciones que se deseen, para fundamentar y razonar el desarrollo.
+
+En toda la tarea, se juega con un punto de ruptura en el que se modificará el diseño de nuestra página web, este valor es 768px, si se quiere cambiar por otro valor se puede realizar, pero habrá que indicarlo y justificarlo. El nuevo valor que se haya seleccionado será el que habrá que tener en cuenta en lugar de 768px.
+
+Los ejercicios son los siguientes:.
+
+
+Ejercicio 1: Desarrollo de una página (index.html) relacionada con una temática.
+
+Se describen las características de la web, las características se describen para un desarrollo mayor igual que 768px, al final del enunciado se indica como debe cambiar la página ante una resolución menor de 768px. 
+
+Cabecera: Debe contener:
+Logotipo de nuestra empresa.
+Nombre de nuestra empresa (no puede formar parte de la imagen del logo).
+Cuatro imágenes o iconos que estarán relacionados con:
+Acceso a zona privada.
+Cesta de la compra.
+Ayuda.
+Accesibilidad.
+El logotipo y el nombre de la empresa deben estar a un lado de la pantalla y las cuatro imágenes o iconos al lado contrario. Todos los elementos deben estar centrados verticalmente dentro de la cabecera.
+Zona de Navegación: La zona de navegación tendrá tres opciones de navegación, los elementos deben estar centrados:
+Opción 1.
+Opción 2.
+Opción 3.
+*Cambiar por nombres según tu temática.
+
+En la zona de navegación, se debe aplicar algún tipo de efecto visto en clase (sombras, transformaciones, transiciones, gradientes,...). Igualmente, se puede aplicar a cualquier parte de la web para hacerla más atractiva.
+
+Zona de contenido:  La zona de contenido estará dividido en tres zonas horizontales:
+Familia de productos (entre 4 y 8):
+Estará formada por un conjunto de familias de productos/secciones según tu temática, entre 4 y 8, por ejemplo fútbol, baloncesto, etc o camisetas, sudaderas, etc. Deben mostrarse en dos filas.
+Para cada familia debe aparecer:
+Imagen representativa de la familia de productos.
+Texto donde se indique el nombre de la familia. 
+Debe haber una separación entre cada letra del nombre de la familia de al menos 7px.
+Al pasar el ratón sobre cada una de las familias se debe aplicar un filtro (a la imagen o al contenedor de la imagen y el nombre) de tal forma que se note que estamos encima.
+Productos más vendidos: La zona de productos más vendidos debe estar formada por dos subzonas verticales:
+Subzona 1: En este apartado debe mostrarse:
+Imagen del producto más vendido o visitado según tu temática.
+Pequeña descripción del producto más vendido o visitado según tu temática.
+Debajo de la imagen debe mostrarse una tabla donde se muestren los 7 productos más vendidos en el año o visitados, para cada producto debe mostrarse, nombre del producto, precio por unidad y número de unidades vendidas en el último mes de ese producto (substituir si tu web no es de productos por nº comentarios y nº de like). Dale un poco de estilo a la tabla el resultado debe ser legible.
+Al hacer click sobre la imagen debe mostrarse el precio del producto o nº de like.
+Subzona 2: Debe mostrarse:
+Los productos más vendidos a los que hace referencia la tabla (del 2 al 7, seis productos en total en esta subzona). Para cada producto debe mostrarse:
+Imagen
+Nombre
+Precio
+Y si hay actualmente disponibilidad o no del producto.
+Cada producto debe tener un borde con sombra estético, de tal forma que las sombras de las familias pares debe ser diferente a las sombras de las familias impares. Para realizar esto debemos utilizar el mínimo número de reglas CSS posible.
+* Subtituir Precio y disponibilidad por nº comentarios y nº de like si tu web no es de productos.
+Zona informativa: Nuestra empresa está muy concienciada con el medio ambiente, el ahorro energético y la economía circular, así cada mes muestra una iniciativa relacionada con esta temática que lleva a cabo y que contribuye a mejorar nuestro entorno. El texto y el título que aparecerá aquí tendrá que tener las siguientes características:
+debe existir un título centrado con la medida que se va a implementar este mes en mayúsculas, las mayúsculas se deben mostrar aplicando reglas CSS. 
+el texto que explica la medida a implementar debe mostrarse en al menos en tres columnas (ver apuntes DIWD, apartado 3.3).
+el relleno del espacio de las columnas tiene que ser de tipo balance.
+debe existir un separador entre cada una de las columnas, elije el tipo de separador y el ancho que quieras, pero debe existir.
+
+Pie de página: Deberá contener:
+Apartados:
+Aviso legal
+Política de cookies
+Condiciones Generales
+Protección de datos
+Estos apartados deben mostrarse como una lista horizontal sin ningún tipo de viñeta.
+Al pasar por encima de cada uno de los apartados, el color debe cambiar (debe poderse leer) y ponerle al texto un subrayado.
+Debajo de estos apartados debe aparecer nuestro copyright y los datos de nuestra organización (nombre, razón social, etc.)
+El fondo del pie de página debe ser una imagen que permita la legibilidad de todos los textos descritos anteriormente.
+Ejercicio 2: El diseño de la página principal en dispositivos con menos de 768px deben producirse los siguientes cambios:
+
+Zona de encabezado: Debe aparecer solo logotipo y los iconos o imágenes deben aparecer en dos filas de dos elementos cada una.
+Zona Contenido: Cada uno de los bloques debe aparecer uno debajo de otro. 
+Zona Contenido --> Familias:
+Las familias deben aparecer en una columna.
+Zona Contenido --> Productos más vendidos:
+La subzona1 y subzona 2 deben aparecer en columna una debajo de la otra.
+En la subzona 1, debe aparecer el producto más vendido y la tabla no debe aparecer.
+En la subzona 2, deben aparecer solo 2 productos (los que quieras).
+Zona Contenido --> Zona informativa:
+El texto debe aparecer en una sola columna.
