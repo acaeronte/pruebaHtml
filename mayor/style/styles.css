@@ -122,7 +122,8 @@ nav a:hover {
 /* Estilos de contenido */
 
 .contenido {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
     justify-content: space-between;
     padding: 20px;
 }
@@ -152,8 +153,9 @@ nav a:hover {
     cursor: pointer;
 }
 
-.seccion img{
+.familia{
     width: 10%;
+    height: 60%;
 }
 
 .seccion p{
@@ -163,18 +165,32 @@ nav a:hover {
 }
 
 .mas-vendidos {
-    /* Estilos de productos más vendidos */
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid black;
+    
 }
 
 .mas-vendidos1 {
-    /* Estilos de productos más vendidos */
-
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    border: 3px solid black;
 }
+.imagen_descripcion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid black;
+}
+
+.mas-vendidos1 img {
+    width: 26%;
+}
+
+
 
 .mas-vendidos2 {
     /* Estilos de productos más vendidos */
-
+    border: 3px solid black;
 }
 
 .zona-informativa {
