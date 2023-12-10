@@ -254,13 +254,37 @@ input.oculto[type=checkbox] {
 }
 
 .mas-vendidos2 {
-    /* Estilos de productos más vendidos */
     border: 3px solid black;
 }
 
 .zona-informativa {
     /* Estilos de zona informativa */
 }
+
+.medida-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.medida-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.medida-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.medida-description p {
+    flex: 1;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: justify;
+    border-right: 1px solid #ccc; /* Separador de columnas */
+}
+
+
 
 
 
