@@ -210,10 +210,26 @@ nav a:hover {
     align-items: center;
 }
 
+.container-table2 {
+    width: 90%;
+    margin: 50px auto;
 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    
+}
 
+.container-table2 img{
+    width: 56%;    
+}
 
-
+span{
+    box-shadow:5px 5px 10px black;
+}
+.first span:nth-child(2n + 1) {
+    box-shadow:10px 10px 10px red;
+}
 
 .democlick3 {
     display: none;
