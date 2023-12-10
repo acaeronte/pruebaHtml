@@ -62,6 +62,7 @@ header {
     border: 3px solid rgb(151, 23, 104);
     margin: 5px;
 }
+
 /* cambiar imagen por texto, pero no me funciona
 #zona_privada{
     display:inline-block;
@@ -129,17 +130,17 @@ nav a:hover {
 }
 
 .familia-productos {
-   display: grid;
-   grid-template-rows: 1fr,1fr;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
 }
 
-.familia_producto{
+.familia_producto {
     border: 3px solid black;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.seccion{
+.seccion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: 3px solid black;
@@ -147,18 +148,19 @@ nav a:hover {
     /*para que no desborde si se hace mas pequeña la pestaña, se van haciendo mas pequeñas*/
     flex-wrap: nowrap;
 }
+
 /*pasar el raton por encima de las familias*/
-.seccion:hover{
+.seccion:hover {
     background-color: #dbeaf4;
     cursor: pointer;
 }
 
-.familia{
+.familia {
     width: 10%;
     height: 60%;
 }
 
-.seccion p{
+.seccion p {
     width: 10%;
     border: 3px solid black;
     letter-spacing: 7px;
@@ -168,7 +170,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: 3px solid black;
-    
+
 }
 
 .mas-vendidos1 {
@@ -176,6 +178,7 @@ nav a:hover {
     grid-template-rows: repeat(3, 1fr);
     border: 3px solid black;
 }
+
 .imagen_descripcion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -186,24 +189,43 @@ nav a:hover {
     width: 26%;
 }
 
-.container-table{
+.container-table {
     width: 90%;
     margin: 50px auto;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 50px;
+    height: 100%;
 }
 
-.table__header,.table__item{
+.table__header {
+    font-weight: bold;
     display: grid;
     align-items: center;
 }
-.table__header{
-    font-weight: bold;
+
+.table__item {
+    display: grid;
+    align-items: center;
 }
-.table__item{
-    padding: 10px;
+
+
+
+
+
+
+.democlick3 {
+    display: none;
+}
+
+:checked~.democlick3 {
+    display: block;
+}
+
+input.oculto[type=checkbox] {
+    position: absolute;
+    left: -999em;
 }
 
 .mas-vendidos2 {
@@ -249,11 +271,11 @@ footer {
     margin: 3px;
 }
 
-.copyright{
+.copyright {
     padding: 12px;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     text-decoration: underline;
     color: orange;
     font-weight: bold;
