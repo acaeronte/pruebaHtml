@@ -285,14 +285,6 @@ input.oculto[type=checkbox] {
 }
 
 
-
-
-
-
-
-
-
-
 /* Estilos de footer */
 
 footer {
@@ -338,6 +330,59 @@ footer {
 
 
 /* Media query para dispositivos menores a 768px */
-@media (max-width: 768px) {
-    /* Estilos específicos para dispositivos móviles */
+/* Media query para pantallas con menos de 768px */
+@media only screen and (max-width: 767px) {
+    /* Zona de encabezado ------------------------------*/
+    .logo {
+        border: 3px solid rgb(54, 20, 226);
+        margin: 5px;
+        /* Ajusta estilos para el logo en dispositivos pequeños */
+    }
+    .nombreEmpresa {
+        display:none;
+    }
+
+    header {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        /* Ajusta estilos para los iconos en dispositivos pequeños */
+    }
+
+    .header-icons {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border: hidden;
+        /* Ajusta estilos para los iconos en dispositivos pequeños */
+    }
+    .icons{
+        border: hidden;
+    }
+
+    /* Zona Contenido------------------------------------- */
+    .bloque {
+        /* Ajusta estilos para cada bloque en dispositivos pequeños */
+    }
+
+    /* Zona Contenido --> Familias */
+    .familias {
+        /* Ajusta estilos para las familias en dispositivos pequeños */
+    }
+
+    /* Zona Contenido --> Productos más vendidos */
+    .subzona1, .subzona2 {
+        /* Ajusta estilos para las subzonas 1 y 2 en dispositivos pequeños */
+    }
+
+    .tabla {
+        display: none; /* Oculta la tabla en dispositivos pequeños */
+    }
+
+    /* Ajusta estilos para el producto más vendido y los dos productos en la subzona 2 */
+
+    /* Zona Contenido --> Zona informativa */
+    .texto-informativo {
+        /* Ajusta estilos para el texto informativo en dispositivos pequeños */
+    }
 }
