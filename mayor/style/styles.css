@@ -131,15 +131,16 @@ nav a:hover {
 
 .familia-productos {
     display: grid;
-    grid-template-rows: 1fr, 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-
+/*
 .familia_producto {
     border: 3px solid black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
+*/
 .seccion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -361,6 +362,10 @@ footer {
     }
 
     /* Zona Contenido------------------------------------- */
+    .familia-productos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
     .bloque {
         /* Ajusta estilos para cada bloque en dispositivos pequeños */
     }
