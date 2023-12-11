@@ -376,11 +376,20 @@ footer {
     }
 
     /* Zona Contenido --> Productos más vendidos */
-    .subzona1, .subzona2 {
+    .mas-vendidos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         /* Ajusta estilos para las subzonas 1 y 2 en dispositivos pequeños */
     }
 
-    .tabla {
+    .container-table {
+        display: none; /* Oculta la tabla en dispositivos pequeños */
+    }
+
+    .container-table2 span:nth-child(2),
+    .container-table2 span:nth-child(3),
+    .container-table2 span:nth-child(4),
+    .container-table2 span:nth-child(5) {
         display: none; /* Oculta la tabla en dispositivos pequeños */
     }
 
