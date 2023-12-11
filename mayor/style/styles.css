@@ -396,7 +396,12 @@ footer {
     /* Ajusta estilos para el producto más vendido y los dos productos en la subzona 2 */
 
     /* Zona Contenido --> Zona informativa */
-    .texto-informativo {
-        /* Ajusta estilos para el texto informativo en dispositivos pequeños */
+    .medida-description {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+    }
+    
+    .medida-description p{
+        border-right: none;
     }
 }
